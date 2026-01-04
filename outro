@@ -1,0 +1,103 @@
+👉 Vá de React primeiro.
+Depois, se precisar, você aprende jQuery rapidinho (ou nem vai precisar).
+
+Agora o porquê (bem direto)
+🔹 jQuery
+
+Foi muito importante no passado
+
+Hoje é considerado legado
+
+Usado só em:
+
+Projetos antigos
+
+Manutenção de sistemas velhos
+
+Pouca demanda para iniciantes
+
+Tudo que ele faz, o JS moderno já faz melhor
+
+👉 Aprender jQuery não vai te abrir muitas portas novas hoje.
+
+🔹 React
+
+É muito usado no mercado
+
+Base para:
+
+Front-end profissional
+
+Vagas de estágio e júnior
+
+Apps web modernos
+
+Te ensina conceitos importantes:
+
+Componentes
+
+Estado
+
+Reatividade
+
+Organização de código
+
+Depois do React, aprender outros frameworks fica fácil (Vue, Angular, etc.)
+
+👉 É investimento de carreira, não só conhecimento.
+
+Caminho recomendado pra você
+
+Como você já sabe JS, eu faria assim:
+
+JavaScript moderno (se ainda não viu bem):
+
+let / const
+
+Arrow functions
+
+map, filter, reduce
+
+async / await
+
+Modules (import/export)
+
+React
+
+JSX
+
+Componentes
+
+Props
+
+useState e useEffect
+
+Eventos
+
+Consumo de API
+
+Projetos pequenos
+
+To-do list
+
+Consumo de API (clima, filmes, etc.)
+
+CRUD simples
+
+E o jQuery?
+
+Se um dia você pegar um projeto antigo:
+
+Dá pra aprender jQuery em poucos dias
+
+Ele vai parecer fácil depois do React
+
+Se quiser, posso:
+
+Montar um plano de estudos em React
+
+Sugerir projetos pra iniciante
+
+Ou te ajudar a decidir entre front-end, back-end ou full stack
+
+É só me dizer 👍
