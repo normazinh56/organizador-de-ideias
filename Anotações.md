@@ -20,7 +20,9 @@ carro: "carro"<br><br>
 }
 
 <h2>Metodos de array</h2>
-<a href="./exemplos/Usos-do-array.map.md">a</a>
+<p>Metodos para usar com o array.</p>
+<p>Array.map, clique no link abaixo para ver como se usa e o por que</p> 
+<a href="./exemplos/Usos-do-array.map.md">Clique aqui array.map</a>
 
 
 
