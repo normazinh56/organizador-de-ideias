@@ -168,3 +168,173 @@ Se você quiser, me diga:
 * 👉 **qual método mais te confunde hoje?**
 
 Posso explicar **um por um**, bem devagar, com exemplos simples 👍
+
+
+
+
+
+
+
+
+
+Perfeito — o `map` é **o que mais trava todo mundo no começo**, então relaxa 😄
+Vou te explicar **bem passo a passo**, sem pular nada.
+
+---
+
+## 🧠 O que o `map` FAZ (em uma frase)
+
+👉 **Ele cria um NOVO array**, transformando cada item do array original.
+
+Ele **NUNCA** altera o array original.
+
+---
+
+## 🔹 Antes do `map`: usando `for`
+
+Vamos ver primeiro do jeito “tradicional”:
+
+```js
+let numeros = [1, 2, 3];
+let novoArray = [];
+
+for (let i = 0; i < numeros.length; i++) {
+  novoArray.push(numeros[i] * 2);
+}
+
+console.log(novoArray); // [2, 4, 6]
+```
+
+Agora guarda isso na cabeça 👆
+O `map` faz **EXATAMENTE isso**, só que de forma mais curta.
+
+---
+
+## 🔹 Agora com `map`
+
+```js
+let numeros = [1, 2, 3];
+
+let novoArray = numeros.map(function(numero) {
+  return numero * 2;
+});
+
+console.log(novoArray); // [2, 4, 6]
+```
+
+💡 Cada volta do `map`:
+
+* `numero` recebe **um item do array**
+* o `return` diz **o que vai entrar no novo array**
+
+---
+
+## 🔁 Como o `map` funciona por dentro
+
+Array: `[1, 2, 3]`
+
+| Volta | numero | return | novo array |
+| ----- | ------ | ------ | ---------- |
+| 1     | 1      | 2      | [2]        |
+| 2     | 2      | 4      | [2, 4]     |
+| 3     | 3      | 6      | [2, 4, 6]  |
+
+---
+
+## ❌ Erro mais comum com `map`
+
+### Esquecer o `return`
+
+```js
+let resultado = numeros.map(n => {
+  n * 2;
+});
+```
+
+❌ Resultado:
+
+```js
+[undefined, undefined, undefined]
+```
+
+✅ Correto:
+
+```js
+let resultado = numeros.map(n => {
+  return n * 2;
+});
+```
+
+Ou mais curto:
+
+```js
+let resultado = numeros.map(n => n * 2);
+```
+
+---
+
+## 🧩 Exemplo com strings
+
+```js
+let nomes = ["ana", "joão", "maria"];
+
+let nomesMaiusculos = nomes.map(nome => nome.toUpperCase());
+
+console.log(nomesMaiusculos);
+// ["ANA", "JOÃO", "MARIA"]
+```
+
+🧠 Pense:
+
+> “pega cada nome e transforma”
+
+---
+
+## 🧩 Exemplo com objetos (muito comum)
+
+```js
+let produtos = [
+  { nome: "Camisa", preco: 50 },
+  { nome: "Calça", preco: 100 }
+];
+
+let produtosComDesconto = produtos.map(produto => {
+  return {
+    nome: produto.nome,
+    preco: produto.preco * 0.9
+  };
+});
+
+console.log(produtosComDesconto);
+```
+
+👉 Aqui o `map` cria **novos objetos**, não altera os antigos.
+
+---
+
+## 🎯 Regra de ouro do `map`
+
+Sempre se pergunte:
+
+> ❓ “Quero transformar todos os itens do array em outra coisa?”
+
+Se a resposta for **SIM** → use `map`.
+
+Se for:
+
+* filtrar → `filter`
+* achar um → `find`
+* somar tudo → `reduce`
+
+---
+
+## 🏋️‍♂️ Exercício rápido (tenta fazer)
+
+```js
+let numeros = [10, 20, 30];
+
+// usando map, crie um array com metade desses valores
+```
+
+Quando quiser, manda sua resposta que eu te digo se está certa ou te ajudo a corrigir 😉
+
