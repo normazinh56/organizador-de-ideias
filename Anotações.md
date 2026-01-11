@@ -11,11 +11,16 @@ arrays podem ser criados com variaveis:<br>
 let array = ["maca","banana"]<br>
 <h2>Como criar strings</h2>
 let strings = "uma string aqui"
+<h2>como criar um objeto</h2>
+let objeto = {
+<br>
+carro: "fiat"<br>
+marca: "uno"<br>
+carro: "carro"<br><br>
+}
 
-
-
-
-
+<h2>Metodos de array</h2>
+<a href="./exemplos/Usos-do-array.map.md">a</a>
 
 
 
